@@ -1,6 +1,6 @@
 # About
-This is just a collection of all my weird processing sketches. 
+This is a collection of all my Processing sketches. 
 
 I am using Processing version `4.3`. 
 
-I will update this README.md eventually. 
+Each project is placed into their own directory, with their own sketch file(s) and README.md file. 
