@@ -1,2 +1,4 @@
 # About
-This is just a circle made of random lines I guess. 
+This is a circle created from lines moving from one point to another on the circumference. 
+
+![Demonstration of circle with lines](circleWithLines.gif)
