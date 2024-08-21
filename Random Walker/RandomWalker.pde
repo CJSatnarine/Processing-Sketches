@@ -18,8 +18,8 @@ void draw() {
 
 class Walker {
   // X and Y positions of walker.
-  int x = 0;
-  int y = 0;
+  float x = 0;
+  float y = 0;
 
   // Constructor.
   Walker() {
@@ -33,8 +33,8 @@ class Walker {
   }
 
   void step() {
-    int xStep = floor(random(3)) - 1;
-    int yStep = floor(random(3)) - 1;
+    float xStep = random(-1, 1);
+    float yStep = random(-1, 1);
 
     this.x += xStep;
     this.y += yStep;
