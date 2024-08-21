@@ -33,16 +33,10 @@ class Walker {
   }
 
   void step() {
-    int choice = floor(random(4));
+    int xStep = floor(random(3)) - 1;
+    int yStep = floor(random(3)) - 1;
 
-    if (choice == 0) {
-      this.x++;
-    } else if (choice == 1) {
-      this.x--;
-    } else if (choice == 2) {
-      this.y++;
-    } else {
-      this.y--;
-    }
+    this.x += xStep;
+    this.y += yStep;
   }
 }
