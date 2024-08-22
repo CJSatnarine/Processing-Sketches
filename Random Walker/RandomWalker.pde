@@ -6,14 +6,14 @@
 Walker walker;
 
 void setup() {
-  size(400, 400);
+  size(800, 800);
   walker = new Walker();
   background(0);
 }
 
 void draw() {
   walker.step();
-  walker.show();
+  walker.show(true);
 }
 
 class Walker {
@@ -27,8 +27,24 @@ class Walker {
     this.y = height / 2;
   }
 
-  void show() {
-    stroke(255);
+  void show(boolean isWhite) {
+    // To make the walker white. 
+    if (isWhite) {
+      stroke(255);
+    }
+    else {
+      // To make the walker a random RBG colour. 
+      int randomNumber = floor(random(0, 3));
+
+      if (randomNumber == 0) {
+        stroke(255, 0, 0);
+      } else if (randomNumber == 1) {
+        stroke(0, 255, 0);
+      } else {
+        stroke(0, 0, 255); 
+      }
+    }
+    
     point(this.x, this.y);
   }
 
