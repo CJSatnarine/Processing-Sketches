@@ -1,5 +1,5 @@
 # About
-This is a collection of all my Processing sketches. 
+This is a collection of all my notes from resources and my personal Processing sketches, but mostly notes. 
 
 I am using Processing version `4.3`. 
 
